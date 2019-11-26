@@ -12,16 +12,23 @@ These instructions will get you a copy of the project up and running on your loc
 3. JDK 1.8
 4. Eclipse target
 
+
 ```
 Give examples
 ```
 
 ### Installing
-
-#### GitBash
-
+Follow the steps below to install the required programs.
+#### Git Bash
+Git Bash is a text-only shell interface that Windows users can use alongside GitHub. 
+To install:
+  Go to https://gitforwindows.org/ and click download.
+  Follow the installation process using all the default options.
+  Open up the program and run 'git --version' to ensure that git is installed correctly.
 
 #### SSH Key
+
+To set up SSH key:
 
 
 #### Eclipse
