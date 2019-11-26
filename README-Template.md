@@ -12,24 +12,32 @@ These instructions will get you a copy of the project up and running on your loc
 3. JDK 1.8
 4. Eclipse target
 
-
-```
-Give examples
-```
-
 ### Installing
 Follow the steps below to install the required programs.
 #### Git Bash
 Git Bash is a text-only shell interface that Windows users can use alongside GitHub. 
 To install:
-  Go to https://gitforwindows.org/ and click download.
-  Follow the installation process using all the default options.
-  Open up the program and run 'git --version' to ensure that git is installed correctly.
+1. Go to https://gitforwindows.org/ and click download.
+2. Follow the installation process using all the default options.
+3. Open up the program and run 'git --version' to ensure that git is installed correctly.
 
 #### SSH Key
+An SSH key is an alternate way to identify yourself. This will be used with Git.
 
 To set up SSH key:
-
+1. Open the terminal you like to use (Git, cmd, etc..)
+2. Run the following line of code into the terminal to generate an ed25519 key
+```
+ ssh-keygen -t ed25519
+```
+3. The terminal will prompt you to enter a filename for your new file. If you’d like the default name, simply press the Enter key. There is no passphrase, so press Enter when the terminal prompts you for a password.
+4. Navigate to the following directory (with username being your username).
+```
+C:\Users\username
+```
+5. If you used the default filename, find the folder titled .ssh. Otherwise, find the filename you previously entered in the terminal.
+6. There will be two files available, one file with a .pub extension and a file with no extension. Use NotePad to open the file with the .pub extension. Copy the contents of the file. It should start with “ssh-ed25519”
+7. Open Git Lab in your browser. Log in and navigate to your settings using the Icon at the top right corner of the screen. Use the lefthand panel to open the “SSH Keys tab”
 
 #### Eclipse
 
