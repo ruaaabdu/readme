@@ -54,7 +54,7 @@ If you already have the JDK installed, the output should resemble the following 
 ```
 C:\Program Files\Java\jdk1.8.0_131\bin\javac.exe
 ```
-####Installation
+#### Installation
 1. Go to the [Oracle website] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and install the latest version of JDK for your OS. 
 2. Once you finished installing the JDK, open up the installation folder and go into the bin folder and copy the filepath. It should resemble the filepath below.
 ```
@@ -68,7 +68,7 @@ SystemPropertiesAdvanced
 5. Ensure that the JDK is installed, explained above. 
 ### Eclipse
 Eclipse is a common IDE. It can be used to launch DashBoard
-####Installation
+#### Installation
 
 
 ### DashBoard
