@@ -30,15 +30,15 @@ An SSH key is an alternate way to identify yourself. This will be used with Git.
 ```
  ssh-keygen -t ed25519
 ```
-3. The terminal will prompt you to enter a filename for your new file. If youíd like the default name, simply press the Enter key. There is no passphrase, so press Enter when the terminal prompts you for a password.
+3. The terminal will prompt you to enter a filename for your new file. If you‚Äôd like the default name, simply press the Enter key. There is no passphrase, so press Enter when the terminal prompts you for a password.
 4. Navigate to the following directory in your file browser(with username being your username).
 ```
 C:\Users\username
 ```
 5. If you used the default filename, find the folder titled .ssh. Otherwise, find the filename you previously entered in the terminal.
-6. There will be two files available, one file with a .pub extension and a file with no extension. Use NotePad to open the file with the .pub extension. Copy the contents of the file. It should start with ìssh-ed25519î
-7. Open Git Lab in your browser. Log in and navigate to your settings using the Icon at the top right corner of the screen. Use the lefthand panel to open the ìSSH Keys tabî. Enter your key in the key field and press Add Key.
-8. Now you can use ìgit.î links without authentication. 
+6. There will be two files available, one file with a .pub extension and a file with no extension. Use NotePad to open the file with the .pub extension. Copy the contents of the file. It should start with ‚Äússh-ed25519‚Äù
+7. Open Git Lab in your browser. Log in and navigate to your settings using the Icon at the top right corner of the screen. Use the lefthand panel to open the ‚ÄúSSH Keys tab‚Äù. Enter your key in the key field and press Add Key.
+8. Now you can use ‚Äúgit.‚Äù links without authentication. 
 
 ### JDK 1.8
 The JDK is the Java Development Kit. You will need it to run any java programs on your machine.
@@ -55,16 +55,16 @@ If you already have the JDK installed, the output should resemble the following 
 C:\Program Files\Java\jdk1.8.0_131\bin\javac.exe
 ```
 ####Installation
-1. Go to the [Oracle website|https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html] and install the latest version of JDK for your OS. 
+1. Go to the [Oracle website] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and install the latest version of JDK for your OS. 
 2. Once you finished installing the JDK, open up the installation folder and go into the bin folder and copy the filepath. It should resemble the filepath below.
 ```
 C:\Program Files\Java\jre1.8.0_221\bin
 ```
-3. Open up the system properties by searching for ìEdit The System Environment Variablesî in the search bar or pasting the following line of code into your cmd termial.
+3. Open up the system properties by searching for ‚ÄúEdit The System Environment Variables‚Äù in the search bar or pasting the following line of code into your cmd termial.
 ```
 SystemPropertiesAdvanced
 ```
-4. Click Environment Variables. Create a new User Variable. For Name, enter ìPATHî and for Value, enter the bin filepath you previously copied. If there is already a variable with the name PATH, click Edit and add the bin filepath to the PATH variable. 
+4. Click Environment Variables. Create a new User Variable. For Name, enter ‚ÄúPATH‚Äù and for Value, enter the bin filepath you previously copied. If there is already a variable with the name PATH, click Edit and add the bin filepath to the PATH variable. 
 5. Ensure that the JDK is installed, explained above. 
 ### Eclipse
 Eclipse is a common IDE. It can be used to launch DashBoard
