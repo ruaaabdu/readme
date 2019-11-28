@@ -84,7 +84,7 @@ DashBoard is a platform by Ross Video that allows users to build User Interface 
 1. Start off by cloning the two repositories required for Dashboard.
 	http://srvottodrepo01.rossvideo.com/ross_dashboard/dashboard 
 	http://srvottodrepo01.rossvideo.com/ross_dashboard/db_shared
-	You can clone in the following two ways
+You can clone in the following two ways
 a. Eclipse 
 - Set up your SSH key by going to Window > Preferences > General > SSH2 in Eclipse and adding your key under Private keys. To add it, click Add Private Key and select the folder that without a .pub extension.
 - Browse to the [DashBoard project](http://srvottodrepo01.rossvideo.com/ross_dashboard/dashboard) in Gitlab. Click the blue Clone button on the top right of the screen and copy the SSH link. 
@@ -102,6 +102,8 @@ git clone git@srvottodrepo01.rossvideo.com:ross_dashboard/dashboard.git
 3. Setup the target in eclipse: Window > Preferences > Plug-in Development > Target Platform. Select Add, then choose the “Start with an empty target definition option. Then add your tagret as a Directory and select the folder you just created (C:\Data\DashBoard\target). Make sure to select the newly created target in the Target Platform screen and hit Apply. 
 4. Import the dashboard repository into Eclipse by going to File > Import > General > Existing Projects into Workspace. Select the root directory where you cloned the project (C:\Data\DashBoard\dashboard). The list of available projects is offered. Select All and Finish. 
 5. Repeat Step 4 for db-shared (C:\Data\DashBoard\db-shared).
+6. In the Plug In Development perspective, find the com.rossvideo.dashboardsuite.branding plugin in the list on the left. From this plug in, right click the DashBoardFramework product and “Run as” an Eclipse Application. At first, the program will fail.
+7. 
 
 ### Kaylee
 
