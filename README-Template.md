@@ -108,4 +108,4 @@ git clone git@srvottodrepo01.rossvideo.com:ross_dashboard/dashboard.git
 ### Kaylee
 
 #### Installation
-![Alt text](/images/image1.png)
+![Alt text](https://github.com/ruaaabdu/readme/blob/master/images/image1.PNG)
