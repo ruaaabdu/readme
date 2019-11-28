@@ -99,7 +99,10 @@ b. Git Bash
 git clone git@srvottodrepo01.rossvideo.com:ross_dashboard/dashboard.git
 ```
 2. Create a target folder (E.g. C:\Data\DashBoard\target) and paste the contents of the [dashboardtp](file://srvottfp01/Company/Project%20Files/dashboard/Binaries/Dev%20Environment/dashboardtp.zip) into the target file. Also copy the content of build\client\NSIS Scripts\extras from your cloned dashboard (e.g. C:\Data\DashBoard\dashboard\build\client\NSIS Scripts\extras) and projectRoot\client\DashBoard.openGear.product.feature\rootfiles from your cloned dashboard (e.g. C:\Data\DashBoard\dashboard\projectRoot\client \DashBoard.openGear.product.feature\rootfiles) into your target folder.
-3. Setup the target in eclipse: Window > Preferences > Plug-in Development > Target Platform. Select Add, then choose the “Start with an empty target definition 
+3. Setup the target in eclipse: Window > Preferences > Plug-in Development > Target Platform. Select Add, then choose the “Start with an empty target definition option. Then add your tagret as a Directory and select the folder you just created (C:\Data\DashBoard\target). Make sure to select the newly created target in the Target Platform screen and hit Apply. 
+4. Import the dashboard repository into Eclipse by going to File > Import > General > Existing Projects into Workspace. Select the root directory where you cloned the project (C:\Data\DashBoard\dashboard). The list of available projects is offered. Select All and Finish. 
+5. Repeat Step 4 for db-shared (C:\Data\DashBoard\db-shared).
+
 ### Kaylee
 
 #### Installation
