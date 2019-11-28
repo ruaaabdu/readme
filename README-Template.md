@@ -75,20 +75,22 @@ Eclipse is a common IDE which you could use to launch DashBoard.
 
 #### Installation
 1. Download the Eclipse 2019-03 installer [Eclipse2019-03-64bit.zip]( http://trogdor.rossvideo.com/dashboard/Dev%20Environment/Eclipse2019-03-64bit.zip). Note: installing another version of Eclipse has not worked well in the past in terms of getting the DashBoard programs to run on it.
+2. To apply the DB code style, go into the Java prespective by going to window > Perspective > Open Perspective > Other > Java. Go to Window > Preferences > Java > Code Style > Formatter and import the XML style file found [here](http://trogdor.rossvideo.com/dashboard/Dev Environment/).
 
 ### DashBoard
-DashBoard is a platform by Ross Video that allows users to build User Interface custom panels for control and monitering. More on DashBoard (here)[https://www.rossvideo.com/products-services/management-systems/automated-production-control/dashboard/].
+DashBoard is a platform by Ross Video that allows users to build User Interface custom panels for control and monitering. More on DashBoard [here](https://www.rossvideo.com/products-services/management-systems/automated-production-control/dashboard/).
 
 #### Installation
 1. Start off by cloning the two repositories required for Dashboard.
-	http://srvottodrepo01.rossvideo.com/ross_dashboard/dashboard
+	http://srvottodrepo01.rossvideo.com/ross_dashboard/dashboard 
 	http://srvottodrepo01.rossvideo.com/ross_dashboard/db_shared
 	You can clone in the following two ways
 a. Eclipse 
-- Set up your SSH key by going to Window > Preferences > General > SSH2 in Eclipse and adding your key under Private keys.
-- Open the Git perspective by going to window > Perspective > Open Perspective > Other > Git.
-- Use the button shown in the link below to clone the Git repo using the SSH Link you coped in the previous step.
-- 
+- Set up your SSH key by going to Window > Preferences > General > SSH2 in Eclipse and adding your key under Private keys. To add it, click Add Private Key and select the folder that without a .pub extension.
+- Browse to the [DashBoard project](http://srvottodrepo01.rossvideo.com/ross_dashboard/dashboard) in Gitlab. Click the blue Clone button on the top right of the screen and copy the SSH link. 
+- Open the Git perspective and click the clone button.
+
+- Select Clone URL and use the SSH Link you copied in the previous step as the URI. The remaining required fields will auto-fill.
 
 b. Git Bash
 - Cd to the directory where you want to clone (ex. cd /C/Data/DashBoard)
@@ -96,7 +98,8 @@ b. Git Bash
 ```
 git clone git@srvottodrepo01.rossvideo.com:ross_dashboard/dashboard.git
 ```
-2. 
+2. Create a target folder (E.g. C:\Data\DashBoard\target) and paste the contents of the [dashboardtp](file://srvottfp01/Company/Project%20Files/dashboard/Binaries/Dev%20Environment/dashboardtp.zip) into the target file. Also copy the content of build\client\NSIS Scripts\extras from your cloned dashboard (e.g. C:\Data\DashBoard\dashboard\build\client\NSIS Scripts\extras) and projectRoot\client\DashBoard.openGear.product.feature\rootfiles from your cloned dashboard (e.g. C:\Data\DashBoard\dashboard\projectRoot\client \DashBoard.openGear.product.feature\rootfiles) into your target folder.
+3. Setup the target in eclipse: Window > Preferences > Plug-in Development > Target Platform. Select Add, then choose the “Start with an empty target definition 
 ### Kaylee
 
 #### Installation
