@@ -128,23 +128,12 @@ Click “Add Required Plug-ins” and “Validate Plug-ins”.
 You will need a Sony License Key to work with a Sony Camera. A screen will show up like this:
 
 #### Process
-1. Go to \\server12\Company\RossKeys\KeyGenerator.exe
+1. Paste this link in your file browser:
+\\server12\Company\RossKeys\KeyGenerator.exe
 
 2. Fill out the fields in the popout window. The password is today’s day number summed with today’s month number, written out in text. i.e. for 28/11/2019 = 28 + 11 = thirty-nine (with a hyphen).
 3. Paste the generated code into the DashBoard panel.
-
 ### Builds
-A build is the process of turning source code to an executable file. 
 
 #### Process
-1. Go to the build website for [Camera Robotics for DashBoard](http://automation/view/DashBoard/view/All%20DashBoard/job/DashboardCameraAlphaBuild/) and log in to Jenkins (same as your windows log in).
-2. Click Configure from the panel on the left and selec the Build Environment tab. Modify the values accordingly:
-- dashboard_branch: The branch in the Dashboard repo to build
-- db_shared: The branch in the db_shared repo to build
-- db_version: The major.minor.micro version number to be associated with your build (all 3 numbers have to be included)
-- db_version_major: The major version number to be associated with your build
-- output-folder-name: The name of the folder that will be posted under the Alpha/Sprint XX folder in [Trogdor]( http://trogdor.rossvideo.com/dashboard/DashBoard/GCC/Alpha/).
-- jira-comment: A Boolean indicating whether you would like a JIRA comment posted with the link to the build.
-- jira-id: The JIRA ticket number to post the comment to (eg. DASH-1234). This is ignored if jira-comment=false
-3. Hit Save and Navigate to the [home page](http://automation/view/DashBoard/view/All%20DashBoard/job/DashboardCameraAlphaBuild/). Click Build Now. If your build is successful, there will a folder, with the name you configured, in [Trogdor](http://trogdor.rossvideo.com/dashboard/DashBoard/GCC/Alpha/) containing your build.
-Note: Do not click Delete Project. To investigate a failed build, look through the console output of your build in the Build History.
+
