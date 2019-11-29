@@ -1,12 +1,12 @@
 ﻿# Getting set up at Ross (DashBoard)
 
-This document will walk you through how to set up GitBash, SHH Key, Eclipse, DashBoard, and Kaylee.
+This document will walk you through how to set up GitBash, SHH Key, Eclipse, DashBoard, Kaylee. It will also explain how to obtain Sony License Keys and how to build DashBoard through Jenkins.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Direct any further questions to your supervisor. 
 
-## Prerequisites
+## What you will be installing
 1. GitBash
 2. Eclipse 2019-03
 3. JDK 1.8
@@ -17,12 +17,14 @@ These instructions will get you a copy of the project up and running on your loc
 Follow the steps below to install the required programs.
 
 ### Git Bash
-Git Bash is a text-only shell interface that Windows users can use alongside GitHub.
+Git Bash is a text-only shell interface that Windows users can use alongside GitHub/Lab.
  
 #### Installation
-1. Go to https://gitforwindows.org/ and click download.
+1. Go to https://gitforwindows.org/ and click Download.
 2. Follow the installation process using all the default options.
-3. Open up the program and run 'git --version' to ensure that git is installed correctly.
+3. Open up the program and run 'git --version' to ensure that git is installed correctly. 
+
+Note: You will need a GitLab account to work on DashBoard projects. If you do not have a GitLab account, send an email to Trung Do and specify to him that you require Developer access to the Ross_DashBoard project. 
 
 ### SSH Key
 An SSH key is an alternate way to identify yourself. This will be used with Git.
@@ -33,8 +35,8 @@ An SSH key is an alternate way to identify yourself. This will be used with Git.
 ```
  ssh-keygen -t ed25519
 ```
-3. The terminal will prompt you to enter a filename for your new file. If you’d like the default name, simply press the Enter key. There is no passphrase, so press Enter when the terminal prompts you for a password.
-4. Navigate to the following directory in your file browser (with username being your username).
+3. The terminal will prompt you to enter a filename for your new file. If you’d like to use the default name, simply press the Enter key. There is no passphrase, so press Enter when the terminal prompts you for one.
+4. Navigate to the following directory in your file browser (with username being your windows username).
 ```
 C:\Users\username
 ```
@@ -80,7 +82,7 @@ Eclipse is a common IDE which you could use to launch DashBoard.
 3. Go to Window > Java > Compiler and set the compliance to 1.8.
 
 ### DashBoard
-DashBoard is a platform by Ross Video that allows users to build User Interface custom panels for control and monitering. More on DashBoard [here](https://www.rossvideo.com/products-services/management-systems/automated-production-control/dashboard/).
+DashBoard is a platform created by Ross Video that allows users to build custom User Interface panels for control and monitering. More on DashBoard [here](https://www.rossvideo.com/products-services/management-systems/automated-production-control/dashboard/).
 
 #### Installation
 1. Start off by cloning the two repositories required for Dashboard.
@@ -148,3 +150,24 @@ A build is the process of turning source code to an executable file.
 - jira-id: The JIRA ticket number to post the comment to (eg. DASH-1234). This is ignored if jira-comment=false
 3. Hit Save and Navigate to the [home page](http://automation/view/DashBoard/view/All%20DashBoard/job/DashboardCameraAlphaBuild/). Click Build Now. If your build is successful, there will a folder, with the name you configured, in [Trogdor](http://trogdor.rossvideo.com/dashboard/DashBoard/GCC/Alpha/) containing your build.
 Note: Do not click Delete Project. To investigate a failed build, look through the console output of your build in the Build History.
+
+## Helpful Links and Information:
+
+### Links
+https://rossvideoltd.sharepoint.com/sites/hr_info/SitePages/Home.aspx
+
+### IP Addresses for cameras
+BRC H900 – 10.65.110.230
+BRC X1000 – 10.65.110.226
+PIVOTCam-SE (Rooster) – 10.65.110.223
+
+### Appendix
+
+#### How to add a PTZ Camera
+
+
+#### How to add a Server
+ 
+
+#### How to add Kaylee PowerPlay
+
