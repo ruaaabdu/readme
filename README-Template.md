@@ -107,7 +107,7 @@ git clone git@srvottodrepo01.rossvideo.com:ross_dashboard/dashboard.git
 4. Import the dashboard repository into Eclipse by going to File > Import > General > Existing Projects into Workspace. Select the root directory where you cloned the project (C:\Data\DashBoard\dashboard). The list of available projects is offered. Select All and Finish. 
 5. Repeat Step 4 for db-shared (C:\Data\DashBoard\db-shared).
 6. In the Plug In Development perspective, find the com.rossvideo.dashboardsuite.branding plugin in the list on the left. From this plug in, right click the DashBoardFramework product and “Run as” an Eclipse Application. Ignore the errors/warnings for now.
-7. In the Plug In Development perspective, go to Debug Configurations using the drop down menu next to the run button. Within DashBoardFramework.product in the Eclipse Application drop down, select the Plug-ins tab and select everything under these plugins:
+7. Set the required plugins. In the Plug In Development perspective, go to Debug Configurations using the drop down menu next to the run button. Within DashBoardFramework.product in the Eclipse Application drop down, select the Plug-ins tab and select everything under these plugins:
 	- Nk – except for tstorm
 	- Visual
 	- Joy
@@ -125,7 +125,18 @@ Click “Add Required Plug-ins” and “Validate Plug-ins”.
 ### Kaylee
 
 #### Installation
-
+1. Start off by cloning the two repositories required for Kaylee.
+	http://srvottodrepo01.rossvideo.com/ross_dashboard/kaylee 
+	http://srvottodrepo01.rossvideo.com/ross_dashboard/db_shared
+For instructions on how to clone git repos, see step 1 of the DashBoard installation.
+2. Import the Kaylee and DB Shard projects to Eclipse (DashBoard installation step 4).
+3. Close of delete without deleting on file system the following plugins:
+a. com.rossvideo.common.visuallogic
+b. com.rossvideo.nk
+c. com.rossvideo.nk.custom.test
+4. Set up the target platform using the same process as dashboard.  Running the product should be under the com.rossvideo.kaylee.server plugin and should be called “Kaylee.product”. The plugin setup should also be the same (DashBoard installation step 7) except for the log4j plugin:
+a. In Run Configuration -> Plug-Ins, select the slf4j and log4j plugins shown in the following screenshots:
+5.  
 ### Sony License Key
 You will need a Sony License Key to work with a Sony Camera. A screen will show up like this:
 
@@ -155,6 +166,8 @@ Note: Do not click Delete Project. To investigate a failed build, look through t
 
 ### Links
 https://rossvideoltd.sharepoint.com/sites/hr_info/SitePages/Home.aspx
+https://www.rossvideo.com/products-services/management-systems/automated-production-control/dashboard/dashboard-u/ 
+https://html-online.com/editor/ 
 
 ### IP Addresses for cameras
 BRC H900 – 10.65.110.230
